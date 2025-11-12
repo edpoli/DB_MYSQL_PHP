@@ -71,7 +71,7 @@
 
                             <a href="modifica_ordine.php">🖊️</a>
                             <a href="elimina_ordine.php">🗑️</a>
-                            <a href="contatti.php"> Contatti</a>
+                            <a href="index.php"> Contatti</a>
 
                         </td>                          
                             

@@ -13,7 +13,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
 
     //query
     $sqlOrdine = "INSERT INTO ordini ( prodotto, quantita, data_di_ordine, contatto) VALUES('$prodotto','$quantita','$dataOrdine', '$identificativo')";
-    // controllare perché dà errore
+    
 
     //eseguo la query
     mysqli_query($conn, $sqlOrdine);
