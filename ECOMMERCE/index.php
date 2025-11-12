@@ -4,6 +4,7 @@
 
     //salvo in una variabile $result, i risultati della query
     $result = mysqli_query($conn, "SELECT * FROM contatti"); // query per prendermi tutta la tabella contatti
+    
 ?>
 
 
@@ -76,7 +77,6 @@
                 <?php endwhile; ?>    
             </tbody>
         </table>
-    </div>
 
 </body>
 </html>

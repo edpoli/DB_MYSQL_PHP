@@ -65,3 +65,14 @@ table th {
     text-decoration: none;
   
 } 
+
+.container_ordini{
+
+    max-width: 900px;
+    margin: auto;
+    margin-top: 20px;
+    background: whitesmoke;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow:  0 0 10px rgb(0, 0, 0.1);
+}
