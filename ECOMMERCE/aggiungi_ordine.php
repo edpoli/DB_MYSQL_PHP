@@ -53,7 +53,7 @@
 
             Quantità : <input name="quantita" type="text" required>
 
-            Data di Ordine : <input name="data" type="text" required>
+            Data di Ordine : <input name="data" type="date" required>
 
 
             <button type="submit">Aggiungi Ordine</button>
