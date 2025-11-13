@@ -67,7 +67,7 @@
                         <td class="actions">
 
                             <a href="modifica_contatto.php">🖊️</a>
-                            <a href="elimina_contatto.php">🗑️</a>
+                           <a href="elimina_contatto.php ?id=<?= $row['id']?>">🗑️</a>
                             <a href="ordini.php">📦</a>
 
                         </td>                          
