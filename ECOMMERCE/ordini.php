@@ -2,9 +2,17 @@
     //importo il file db
     require 'db.php';
 
-    //salvo in una variabile $result, i risultati della query
-    $resultOrdini = mysqli_query($conn, "SELECT * FROM ordini"); // query per prendermi tutta la tabella ordini
+
+    $contatto_id = $_GET['id']; // recupero l id del contatto
+
+    $contatto = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM contatti WHERE id=$contatto_id"));
+
+
+    //salvo in una variabile $ordini i risultati della query
+    $ordini = mysqli_query($conn, "SELECT * FROM ordini WHERE contatto= $contatto_id"); // query per prendermi tutta la tabella ordini
 ?>
+
+
 
 
 <!DOCTYPE html>
@@ -12,81 +20,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rubrica ordini</title>
+    <title>Ordini per contatto</title>
     <link rel="stylesheet" href="style.css?v<?= time() ?>">
 </head>
 <body>
 
-    <div class="container_ordini">
 
-        <h1>Rubrica ordini</h1>
-        <a href="aggiungi_ordine.php" class="button">Aggiungi ordine</a>
+    <div class="container">
 
+        <h2>Ordini di <?= $contatto['nome'] ?> </h2>
+
+        <a href="aggiungi_ordine.php?id= <?= $contatto_id ?>" class="button">Nuovo Ordine</a>
 
         <table>
 
-            <thead>
-                <tr>
-                    <th>
-                        Prodotto : 
-                    </th>
-                     <th>
-                        Quantità : 
-                    </th>
-                    <th>
-                        Data dell'ordine : 
-                    </th>
+            <tr>
+                <th>Prodotto</th>
+                <th>Quantità</th>
+                <th>Data</th>
+            </tr>
 
-                    <th>
-                        identificativo : 
-                    </th>
+            <?php  while ($row = mysqli_fetch_assoc($ordini)) :  ?>
 
+            <tr>
 
-                    <th>
-                        Actions : 
-                    </th>
+                <td><?= $row['prodotto'] ?></td>
+                <td><?= $row['quantita'] ?></td>
+                <td><?= $row['data_di_ordine'] ?></td>
 
-                    
-                    
-                </tr>
-            </thead>
+            </tr>
 
 
 
+             <?php  endwhile;   ?>
 
-            <tbody>
-                <!--Ciclo WHILE FINTANTO CHE HO RESULT, MOSTRAMELI IN ROW DEDICATE--->
-                <?php  while($row = mysqli_fetch_assoc($resultOrdini)) :     ?>
-                    <tr>
-                        <td>
-                        <!--HTMLSPECIALCHARS aggiunge alla pagina html parti di codice-->
-                            <?= htmlspecialchars($row['prodotto']) ?> <!--mostra prodotto-->
-                        </td>
-                        <td>
-                            <?= htmlspecialchars($row['quantita']) ?> <!--mostra quantità-->
-                        </td>
-                        <td>
-                            <?= htmlspecialchars($row['data_di_ordine']) ?> <!--mostra data ordine-->
-                        </td>
-
-                         <td>
-                            <?= htmlspecialchars($row['contatto']) ?> <!--mostra contatto_id-->
-                        </td>
-
-                        <td class="actions">
-
-                            <a href="modifica_ordine.php">🖊️</a>
-                            <a href="elimina_ordine.php">🗑️</a>
-                            <a href="index.php"> Contatti</a>
-
-                        </td>                          
-                            
-                    </tr>
-
-                <?php endwhile; ?>    
-            </tbody>
         </table>
+        
+        <a href="index.php" class="button">Torna ai contatti</a>
+        
+
     </div>
 
+
+    
 </body>
 </html>

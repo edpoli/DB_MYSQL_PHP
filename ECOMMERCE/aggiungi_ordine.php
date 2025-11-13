@@ -1,65 +1,79 @@
 <?php
 
-require 'db.php';
 
-//se il form è stato inviato tramite il metodo POST
+    require 'db.php';
 
-if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    $prodotto = $_POST['prodotto'];
-    $quantita = $_POST['quantità'];
-    $dataOrdine = $_POST['data_ordine'];
-    $identificativo =$_POST['identificativo'];
+    //prendo l ID del contatto a cui legare l ordine
+    $contatto_id = $_GET['id'];
 
-    //query
-    $sqlOrdine = "INSERT INTO ordini ( prodotto, quantita, data_di_ordine, contatto) VALUES('$prodotto','$quantita','$dataOrdine', '$identificativo')";
-    
 
-    //eseguo la query
-    mysqli_query($conn, $sqlOrdine);
+    if($_SERVER["REQUEST_METHOD"] == "POST"){
 
-    //rendirizzamento utente alla index post inserimento
-    header("Location: ordini.php");
 
-}
+        //RECUPERO I DATI DAL FORM DI INSERIMENTO DEL ORDINE
+        $prodotto = $_POST['prodotto'];
+        $quantita = $_POST['quantita'];
+        $data = $_POST['data'];
+
+        //query
+        $sql = "INSERT INTO ordini (contatto, prodotto, quantita, data_di_ordine)
+                    VALUES ('$contatto_id', '$prodotto', '$quantita', '$data')";
+
+
+        //eseguo la query
+        mysqli_query($conn, $sql);
+
+        //reindirizzo
+        header("Location: ordini.php?id=$contatto_id");
+
+    }
 ?>
 
 
-
 <!DOCTYPE html>
-<html lang="it">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Aggiungi Ordine</title>
+    <title>Aggiungi ordine</title>
     <link rel="stylesheet" href="style.css?v<?= time() ?>">
 </head>
 <body>
 
-
     <div class="container">
 
-        <h1>Aggiungi ordine</h1>
-
+        <h2>Aggiungi ordine</h2>
+            
+        
         <form action="" method="POST">
 
 
             Prodotto : <input name="prodotto" type="text" required>
 
-            Quantità : <input name="quantità" type="number" required>
+            Quantità : <input name="quantita" type="text" required>
 
-            Data dell'ordine : <input name="data_ordine" type="text" required>
+            Data di Ordine : <input name="data" type="text" required>
 
-            identificativo: <input name='identificativo' type="number" required>
 
-            <button type="submit">Salva</button>
+            <button type="submit">Aggiungi Ordine</button>
+
+
 
 
         </form>
-        
-            <a href="ordini.php" class="button">Torna agli ordini</a>
-            
+
+
+            <a href="ordini.php?id=<?= $contatto_id ?>" class="button">Torna agli ordini</a>
+
+
+
     </div>
+
+
+
+
+
 
 
     
