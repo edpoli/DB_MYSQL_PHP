@@ -13,7 +13,7 @@
 
 ---
 
-![Screenshot dell app](.C:/xampphtdocs/DB_MYSQL_PHP/ECOMMERCE/images/screenshot.png)
+![Screenshot dell app](.C:/xampphtdocs/DB_MYSQL_PHP/ECOMMERCE/images/screenshot_ordini.png)
 
 ```bash
 Aprire VsCode
