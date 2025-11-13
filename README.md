@@ -1,6 +1,6 @@
 # DATABASE E-COMMERCE
 ## Lista utenti e ordini
-### Corso Full Stack 2025
+### Corso Full Stack
 *Novembre 2025 📦*
 ---
 
