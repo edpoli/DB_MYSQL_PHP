@@ -20,6 +20,14 @@
 ---
 ![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot_ordini.png)
 ---
+***Eliminazione contatti***
+---
+![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot_elimina_contatti.png)
+---
+***Eliminazione ordini***
+---
+![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot_elimina_ordini.png)
+---
 ***Tabella contatti***
 ---
 ![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tabella_contatti.png)
@@ -28,6 +36,9 @@
 ---
 ![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tabella_ordini.png)
 ---
+
+
+
 ```bash
 Aprire VsCode
 Aprire http://localhost/DB_MYSQL_PHP/ECOMMERCE/ordini.php
