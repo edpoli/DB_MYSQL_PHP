@@ -13,8 +13,7 @@
 
 ---
 
-![Screenshot dell app](.C:/xampp/htdocs/DB_MYSQL_PHP/ECOMMERCE/img/screenshot_ordini.png)
-
+![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot%20_ordini.png)
 ```bash
 Aprire VsCode
 Aprire http://localhost/DB_MYSQL_PHP/ECOMMERCE/ordini.php
