@@ -13,10 +13,7 @@
 
 ---
 
-![Screenshot_ordini](./images/Screenshot _ordini.png)
-![Screenshot_contatti](./images/screenshot_contatti.png)
-![Screenshot tab_contatti](./images/tab_contatti.png)
-![Screenshot tab_ordini](./images/tab_ordini.png)
+![Screenshot dell app](./images/Screenshot_ordini.png)
 
 ```bash
 Aprire VsCode
