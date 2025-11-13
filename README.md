@@ -13,7 +13,7 @@
 
 ---
 
-![Screenshot dell app](./ECOMMERCE/img/Screenshot_ordini.png)
+![Screenshot dell app](./ECOMMERCE/images/Screenshot_ordini.png)
 
 ```bash
 Aprire VsCode
