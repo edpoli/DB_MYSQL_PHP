@@ -36,6 +36,12 @@
                     <th>
                         Data dell'ordine : 
                     </th>
+
+                    <th>
+                        identificativo : 
+                    </th>
+
+
                     <th>
                         Actions : 
                     </th>
