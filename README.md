@@ -14,9 +14,13 @@
 ---
 
 ![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot%20_ordini.png)
+---
 ![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot_contatti.png)
+---
 ![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tab_contatti.png)
+---
 ![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tab_ordini.png)
+---
 ```bash
 Aprire VsCode
 Aprire http://localhost/DB_MYSQL_PHP/ECOMMERCE/ordini.php
