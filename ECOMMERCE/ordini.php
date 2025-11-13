@@ -4,7 +4,7 @@
 
 
     $contatto_id = $_GET['id']; // recupero l id del contatto
-
+    
     $contatto = mysqli_fetch_assoc(mysqli_query($conn, "SELECT * FROM contatti WHERE id=$contatto_id"));
 
 
