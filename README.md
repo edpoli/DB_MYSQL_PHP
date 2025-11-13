@@ -14,7 +14,7 @@
 ---
 *Lista Ordini*
 ---
-![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot%20_ordini.png)
+![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/Screenshot_ordini.png)
 ---
 *Lista Contatti*
 ---
@@ -22,11 +22,11 @@
 ---
 ***Tabella contatti***
 ---
-![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tab_contatti.png)
+![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tabella_contatti.png)
 ---
 ***Tabella ordini***
 ---
-![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tab_ordini.png)
+![Testo Alternativo](https://github.com/edpoli/DB_MYSQL_PHP/blob/main/ECOMMERCE/images/tabella_ordini.png)
 ---
 ```bash
 Aprire VsCode
